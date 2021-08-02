@@ -5,7 +5,7 @@ import time
 from dl_downloader import download_with_dl
 
 EXAMPLE = False
-CHROME_DRIVER_PATH = 'E:/Tubitak/youtube_video_downloader/chromedriver_win32/chromedriver.exe'
+CHROME_DRIVER_PATH = 'chromedriver_win32/chromedriver.exe'
 
 def example():
     '''
