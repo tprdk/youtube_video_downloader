@@ -51,7 +51,7 @@ def get_video_urls(driver, url_list, url_queue):
 def crawl(driver, url, url_queue):
     '''
     Öncelikle Youtube web sitesinin browser üzerinde yüklenmesini sağlar.
-    Sonsuz bir döngüde 50 saniyelik beklemelerle
+    Sonsuz bir döngüde 60 saniyelik beklemelerle
     get_video_urls ile sayfadaki videoların url'lerini alır
     scroll_down_page fonksiyonu ile sayfayı aşağı scroll eder
 
@@ -66,6 +66,6 @@ def crawl(driver, url, url_queue):
         get_video_urls(driver, url_list, url_queue)
         scroll_down_page(driver)
         print(f'\nUrl count : {len(url_list)}')
-        time.sleep(50)
+        time.sleep(60)
 
 
